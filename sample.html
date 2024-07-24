@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 1400px;
+  max-width: 3000px;
+}
+
+.image {
+  display: block;
+  width: 1398px;
+  height: auto;
+
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  
+}
+p{   
+  margin-top: 50px;
+  margin-left: 400px;
+  margin-right: 400px;
+  color: rgb(54, 51, 48);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 150%;
+  text-align: center;
+}
+h2{
+    margin-top: 50px;
+  margin-left: 400px;
+  margin-right: 400px;
+  color: rgb(124, 63, 2);
+  font-family: 'candara';
+  font-size: 250%;
+  text-align: center;
+}
+h1{
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: rgb(54, 51, 48);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+</head>
+<body style="background-color:rgb(230, 234, 234);">
+
+<div class="topnav">
+    <a class="active" href="#About">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="container">
+    <img src="img/Deakin University.jpg" class="image">
+    <div class="overlay">Hey, I'm Asmithra</div>
+  </div>
+  <hr width="100%" size="3">
+  <img src="img/ashh.jpeg" height="600" width="350">
+  <p>I am a full time software engineering student at Deakin university, Australia</p>
+  <hr width="100%" size="3">
+  <h2>Here's what I've done so far</h2>
+  <div class="image-container">
+    <img src="img/hotel.webp" height="200" width="300">
+      <p>Hotel room booking website for metropolis.</p>
+  </div>
+  <div class="image-container">
+    <img src="img/ninja.jpeg" height="200" width="300">
+      <p>Food ordering website for ninjagrill.</p>
+  </div>
+  <hr width="100%" size="3">
+  <h1>My photos</h1>
+  
+  <div class="row">
+    <div class="column">
+      <img src="img/bluehost.png" height="200" width="300">
+    </div>
+    <div class="column">
+      <img src="img/digest.webp" height="200" width="300">
+    </div>
+    <div class="column">
+      <img src="img/web.webp" height="200" width="300">
+    </div>
+  </div>
+  <hr width="100%" size="3">
+
+
+ 
+
+</body>
+</html>
